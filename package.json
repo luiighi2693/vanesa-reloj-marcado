@@ -9,6 +9,10 @@
     "kiosk"
   ],
   "license": "MIT",
+  "engines": {
+    "node": "10.15.0",
+    "npm": "6.4.1"
+  },
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
@@ -17,7 +21,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build"
+    "postinstall": "ng build --aot -prod"
   },
   "private": true,
   "dependencies": {
@@ -32,19 +36,23 @@
     "@angular/router": "^5.2.0",
     "bootstrap": "^4.2.1",
     "core-js": "^2.4.1",
+    "express": "^4.16.4",
+    "path": "^0.12.7",
     "rxjs": "^5.5.6",
     "simple-keyboard": "latest",
+    "typescript": "~2.5.3",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
-    "@angular/cli": "1.6.6",
-    "@angular/compiler-cli": "^5.2.0",
+    "@angular/cli": "^7.3.0",
+    "@angular/compiler-cli": "^5.2.11",
     "@angular/language-service": "^5.2.0",
     "@types/core-js": "0.9.46",
     "@types/jasmine": "~2.8.3",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
+    "enhanced-resolve": "^3.3.0",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~2.0.0",
