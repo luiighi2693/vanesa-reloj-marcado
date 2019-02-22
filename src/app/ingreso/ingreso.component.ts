@@ -7,13 +7,15 @@ import {Router} from "@angular/router";
   styleUrls: ['./ingreso.component.css']
 })
 export class IngresoComponent implements OnInit {
+  action: any;
 
   constructor(private router:Router) { }
 
   ngOnInit() {
+    this.action = window.sessionStorage.getItem('param');
     setTimeout(() => {
-      this.router.navigate([window.sessionStorage.getItem('param') === 'ingreso' ? 'marcacion-ingreso' : 'marcacion-egreso']);
-    }, 2000);
+      this.router.navigate([this.action === 'ingreso' ? 'marcacion-ingreso' : 'marcacion-egreso']);
+    }, 3000);
   }
 
 }

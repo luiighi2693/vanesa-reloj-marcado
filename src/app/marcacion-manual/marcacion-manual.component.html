@@ -1,18 +1,16 @@
-<div class="container" style="position: absolute;max-width: 100%;    top: 50%;left: 50%;transform: translate(-50%, -50%);">
+<div class="container containerMark">
   <div class="row d-flex justify-content-center">
     <div style="text-align:center">
-      <h1 style="margin-top: 10%;">Marcación Manual</h1>
-      <div class="row">
-        <div class="col-sm-6">
-          <a routerLink="/keyboard/ingreso"><img src="/assets/images/icono-ingreso.png"></a>
-        </div>
-        <div class="col-sm-6">
-          <a routerLink="/keyboard/egreso"><img src="/assets/images/icono-egreso.png"></a>
-        </div>
+      <h2 style="font-family: Montserrat-Bold, serif; color: #5c108c;">Marcación<br>Manual</h2>
+      <div class="containerMarkCenter">
+        <a routerLink="/keyboard/ingreso"><img src="/assets/images/icon-ingreso-manual-156x156px.png" style="    width: 20%;     margin-right: 2.5%;"></a>
+        <a routerLink="/keyboard/egreso"><img src="/assets/images/icon-salida-156x156px.png" style="    width: 20%;     margin-left: 2.5%;"></a>
+        <h6 style="margin-top: 2%;"><span style="font-family: Montserrat-Bold, serif; color: #5c108c;">
+          Para comenzar</span> seleccioná si estás por <br> registrar entrada o salida de la oficina.
+        </h6>
       </div>
 
-      <h6 style="    margin-top: 10%; margin-bottom: 10%;">Para comenzar selecciona si estás por<br>registrar entrada o salida de la oficina</h6>
-      <span> Pulse sobre el ícono   <a routerLink="/marcacion-{{getAction()}}"><img src="/assets/images/icono-{{getAction()}}.png" style="width: 30px; height: 30px;"></a>    para acceso manual</span>
+      <img src="/assets/images/logo-vanesa-591x295px.png" class="footerLogo">
     </div>
 
   </div>

@@ -22,6 +22,7 @@ export class KeyboardComponent implements OnInit{
     if (!this.action) {
       this.action = 'ingreso';
     }
+    window.sessionStorage.setItem('param', this.action);
   }
 
   ngOnInit() {

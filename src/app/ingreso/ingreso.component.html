@@ -1,17 +1,17 @@
-<div class="container" style="position: absolute;max-width: 100%;    top: 50%;left: 50%;transform: translate(-50%, -50%);">
+<div class="container containerMark">
   <div class="row d-flex justify-content-center">
     <div style="text-align:center">
-      <div class="row">
-        <div class="col-sm-12">
-          <h1 style="margin-top: 10%;">Bienvenida <br> Belén Casalotti!</h1>
-        </div>
-        <div class="col-sm-12">
-          <img src="/assets/images/imagen-bienvenida.png">
-        </div>
-        <div class="col-sm-12">
-          <span> Que tengas un buen día!</span>
-        </div>
+      <h2 *ngIf="action === 'ingreso'" style="font-family: Montserrat-Bold, serif; color: #5c108c;">¡Que tengas<br>una excelente jornada<br>MARCOS!</h2>
+      <h2 *ngIf="action === 'egreso'" style="font-family: Montserrat-Bold, serif; color: #5c108c;">¡Nos vemos pronto<br>MARCOS!</h2>
+      <div class="containerMarkCenter">
+        <img src="/assets/images/image-profile-156x156px.png" style="    width: 20%;"><br>
+        <img src="/assets/images/logo-gif-180x180px.gif" style="    width: 10%;">
+        <h6 *ngIf="action === 'ingreso'" style="margin-top: 2%; color: #5c108c;">¡En <span style="font-family: Montserrat-Bold, serif;">VANESA</span> brillamos <br> para hacer brillar!</h6>
+        <h6 *ngIf="action === 'egreso'" style="margin-top: 2%; color: #5c108c;">¡Que sigas<br> disfrutando tu dia!</h6>
       </div>
+
+      <img src="/assets/images/logo-vanesa-591x295px.png" class="footerLogo">
     </div>
+
   </div>
 </div>

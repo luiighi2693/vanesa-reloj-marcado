@@ -6,3 +6,43 @@ html,
 body {
   font-family: sans-serif;
 }
+
+@font-face {
+  font-family: Montserrat-Light, serif;
+  src: url("assets/fonts/Montserrat-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Montserrat-Bold, serif;
+  src: url("assets/fonts/Montserrat-Bold.otf") format("opentype");
+}
+
+.containerMark {
+  position: absolute;
+  max-width: 48%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 80%;
+  height: 80%;
+  padding: 5% 0 5%;
+  background-color: white;
+  font-family: Montserrat-Light,serif;
+}
+
+.containerMarkCenter{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 100%;
+}
+
+.footerLogo{
+  width: 30%;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

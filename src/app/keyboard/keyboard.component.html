@@ -1,13 +1,13 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div class="container" style="position: absolute;max-width: 100%;    top: 50%;left: 50%;transform: translate(-50%, -50%);">
+<div class="container containerMark">
     <div class="row d-flex justify-content-center">
         <div style="text-align:center">
-            <h1 style="margin-top: 10%;" [style.color]="action === 'ingreso' ? 'blue':'red'">Marcación de {{action}}</h1>
-            <h6>Ingrese su DNI</h6>
+            <h1 style="color: #5c108c;">Marcación<br>Manual</h1>
+            <h6>Ingresá los siguientes datos personales</h6>
             <input class="" placeholder="" name="value" [(ngModel)]="value" [type]="isDni ? 'text' : 'password'"
                    style="    border: 1px solid;margin-top: 5%;margin-bottom: 5%;height: 50px;"/>
             <div class="simple-keyboard" style="margin-bottom: 5%;"></div>
-            <span> Pulse sobre el ícono   <a routerLink="/marcacion-{{action === 'ingreso' ? 'ingreso' : 'egreso'}}"><img src="/assets/images/icono-{{action === 'ingreso' ? 'ingreso' : 'egreso'}}.png" style="width: 30px; height: 30px;"></a>    para acceso manual</span>
+
+            <img src="/assets/images/logo-vanesa-591x295px.png" class="footerLogo">
         </div>
 
     </div>
